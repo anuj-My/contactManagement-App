@@ -41,7 +41,7 @@ function App() {
       <Route path="/contacts">
         <AddContact addContactHandler={addContactHandler} />
       </Route>
-      <Route path="/list">
+      <Route path="/">
         <ContactList
           contactsData={contactsData}
           getContactsId={removeContactHandler}

@@ -63,7 +63,7 @@ export default function AddContact({ addContactHandler }) {
         </div>
 
         <button className="ui button blue">Add</button>
-        <Link href="/list" className="ui button blue">
+        <Link href="/" className="ui button blue">
           Show Contact List
         </Link>
       </form>
