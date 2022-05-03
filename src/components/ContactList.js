@@ -1,6 +1,6 @@
 import React from "react";
 import ContactItem from "./ContactItem";
-import Link from "./Link";
+import { NavLink } from "react-router-dom";
 
 export default function ContactList({ contactsData, getContactsId }) {
   const deleteContactHandler = (id) => {
@@ -17,9 +17,9 @@ export default function ContactList({ contactsData, getContactsId }) {
   });
   return (
     <div className="ui segment">
-      <Link href="/contacts" className="ui button blue ">
+      <NavLink to="/addcontacts" className="ui button blue ">
         Add New Contact
-      </Link>
+      </NavLink>
       <div className="ui divided items ">{renderContactsData}</div>
     </div>
   );

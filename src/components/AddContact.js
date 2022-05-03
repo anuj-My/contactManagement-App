@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Link from "./Link";
+import { NavLink } from "react-router-dom";
 
 export default function AddContact({ addContactHandler }) {
   const [contacts, setContacts] = useState({
@@ -63,9 +63,9 @@ export default function AddContact({ addContactHandler }) {
         </div>
 
         <button className="ui button blue">Add</button>
-        <Link href="/" className="ui button blue">
+        <NavLink to="/" className="ui button blue">
           Show Contact List
-        </Link>
+        </NavLink>
       </form>
     </div>
   );
